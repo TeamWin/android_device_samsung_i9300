@@ -1,0 +1,10 @@
+/efs            ext4        /dev/block/platform/dw_mmc/by-name/EFS      flags=display="EFS";backup=1;canbewiped
+/boot           emmc        /dev/block/platform/dw_mmc/by-name/BOOT
+/recovery       emmc        /dev/block/platform/dw_mmc/by-name/RECOVERY
+/cache          ext4        /dev/block/platform/dw_mmc/by-name/CACHE
+/system         ext4        /dev/block/platform/dw_mmc/by-name/SYSTEM
+/data           ext4        /dev/block/platform/dw_mmc/by-name/USERDATA
+/preload        ext4        /dev/block/platform/dw_mmc/by-name/HIDDEN
+
+/external_sd    vfat        /dev/block/platform/s3c-sdhci.2/by-num/p1   flags=display="Micro SDCard";storage;wipeingui;removable
+/usb-otg        vfat        /dev/block/sda1     /dev/block/sda          flags=removable;storage;display=USB-OTG

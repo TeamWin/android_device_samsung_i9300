@@ -1,3 +1,8 @@
 #
-# system.prop for smdk4x12
+# system.prop for i9300
 #
+
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+ro.sf.lcd_density=320
+ro.lcd_min_brightness=20
