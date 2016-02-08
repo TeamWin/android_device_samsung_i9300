@@ -39,12 +39,29 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := cyanogenmod_i9300_defconfig
+TARGET_KERNEL_CONFIG := device/samsung/i9300/kernelconfig/cyanogenmod_i9300_defconfig
 BOARD_RIL_CLASS := ../../../device/samsung/i9300/ril
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
+TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/twrp.fstab
 RECOVERY_FSTAB_VERSION := 2
+
+
+# TWRP
+TWRP_NEW_THEME := true
+TW_THEME := portrait_hdpi
+TW_INCLUDE_CRYPTO := true
+
+# TARGET_USERIMAGES_USE_F2FS := true
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+HAVE_SELINUX := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_MAX_BRIGHTNESS := 255
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/i9300/custombootimg.mk
 
 # Selinux
 BOARD_SEPOLICY_DIRS += \
