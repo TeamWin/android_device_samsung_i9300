@@ -7,5 +7,5 @@
 /preload                ext4            /dev/block/mmcblk0p10
 /misc                   emmc            /dev/block/platform/dw_mmc/by-name/OTA
 
-/external_sd            vfat            /dev/block/mmcblk1p1	/dev/block/mmcblk1   flags=display="Micro SDcard";storage;wipeingui;removable
-/usb-otg         vfat       /dev/block/sda1         /dev/block/sda       flags=display="USB-OTG";storage;wipeingui;removable
+/external_sd            auto            /dev/block/mmcblk1p1	/dev/block/mmcblk1   flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg         auto       /dev/block/sda1         /dev/block/sda       flags=display="USB-OTG";storage;wipeingui;removable
