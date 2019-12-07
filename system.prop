@@ -1,10 +1,8 @@
-#
-# system.prop for smdk4x12
-#
-
-dalvik.vm.dexopt-data-only=1
-rild.libpath=/system/lib/ril-wrapper.so
-rild.libargs=-d /dev/ttyS0
-ro.ril.telephony.mqanelements=5
+ro.boot.selinux=permissive
+ro.hardware=smdk4x12
+ro.chipname=exynos4
+ro.arch=exynos4
+ro.lcd_min_brightness=0
+ro.lcd_brightness=162
 ro.sf.lcd_density=320
-ro.lcd_min_brightness=20
+persist.sys.usb.config=mtp,adb

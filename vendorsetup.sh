@@ -1,0 +1,2 @@
+add_lunch_combo omni_i9300-eng
+add_lunch_combo omni_i9300-userdebug
