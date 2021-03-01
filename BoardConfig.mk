@@ -39,7 +39,7 @@ TW_THEME := portrait_mdpi
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/kona
 TARGET_KERNEL_CONFIG := lineageos_i9300_defconfig
 
 # Cache
