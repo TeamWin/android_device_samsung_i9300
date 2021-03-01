@@ -33,6 +33,8 @@ BOARD_RIL_CLASS := ../../../device/samsung/i9300/ril
 # Graphics
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
+TW_THEME := portrait_mdpi
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
 
